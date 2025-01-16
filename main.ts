@@ -1,5 +1,10 @@
 import * as keyboard from "https://deno.land/x/denopilot/mod_keyboard.ts";
+
+import "./injector.ts";
+
 let lastKills = 0;
+
+console.log('Sending the key ";" every time a player gets a kill');
 
 Deno.serve(
   {
